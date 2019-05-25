@@ -1,3 +1,4 @@
+
 function createTable(){
     let parentElem = document.querySelector(".block");
     for(let i = 0; i < 10; i++){
@@ -7,3 +8,4 @@ function createTable(){
     }
 }
 createTable();
+
