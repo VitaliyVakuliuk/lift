@@ -72,3 +72,6 @@ document.querySelector('#ten')
         display.value = "doors are closed"
         setTimeout("display.value = 'lift going to 10 floor'", 2000);
     });
+
+
+alert("hellp world");
