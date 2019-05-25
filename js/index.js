@@ -1,25 +1,20 @@
+import  { NUMBER_FLOORS } from "../constants.js";
 
-<<<<<<< HEAD
-function createTable(){
+function createElements(){
     const parentElem = document.querySelector(".block");
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i <= NUMBER_FLOORS; i++){
         let elem = document.createElement("div");
-        let floor = document.createElement("class");
-        floor.className = "floor";
-        elem.appendChild(floor);
-        elem.innerHTML = i;
+        elem.className = "floor";
+        elem.innerHTML = "floor" + " " +i;
         parentElem.appendChild(elem);
     }
 }
-createTable();
-
-
-=======
+createElements();
 
 function callLift(floor){
     setTimeout(()=>{
-        alert("Ліфт прибувю Двері відкрито");
+        alert("Ліфт прибув Двері відкрито");
     },2000); // todo time change after create all floors
 };
-callLift("f");
->>>>>>> 5adce6caf1324f4d33568bc58d60eae03d633d84
+
+
