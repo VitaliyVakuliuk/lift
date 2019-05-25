@@ -1,11 +1,12 @@
 //import  { NUMBER_FLOORS } from "../constants.js";
 
-function createElements(){
-    const parentElem = document.querySelector(".block");
+function createElements(display = null, parentEl = "#block"){
+    const parentElem = document.querySelector(parentEl);
+
     for(let i = 1; i <= 5; i++){
         let elem = document.createElement("div");
-        elem.className = "floor";
-        elem.innerHTML = `floor ${i}`;
+        elem.className = display || "floor";
+        elem.innerHTML = display ? i : `floor ${i}`;
         parentElem.appendChild(elem);
     }
 }
@@ -14,6 +15,7 @@ createElements();
 function callLift(floor){
     setTimeout(()=>{
         alert(`Ліфт прибув Двері відкрито ${floor}`);
+        showDisplay();
     },2000); // todo time change after create all floors
 };
 
@@ -26,4 +28,7 @@ let asd = document.querySelectorAll('.floor')
 function func(e){
     callLift(e.target.innerHTML);
 };
-console.log(asd)
+
+function showDisplay() {
+    createElements("btn","#display",);
+}
