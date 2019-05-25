@@ -1,11 +1,8 @@
 
-function createTable(){
-    let parentElem = document.querySelector(".block");
-    for(let i = 0; i < 10; i++){
-        let elem = document.createElement("div");
-        elem.innerHTML = i;
-        parentElem.appendChild(elem);
-    }
-}
-createTable();
 
+function callLift(floor){
+    setTimeout(()=>{
+        alert("Ліфт прибувю Двері відкрито");
+    },2000); // todo time change after create all floors
+};
+callLift("f");
