@@ -3,7 +3,8 @@ function func(){
         let elem = document.createElement('div');
         let num = document.createTextNode(i);
         elem.appendChild(num);
-        document.body.appendChild(elem);
+        let block = document.querySelector('.block');
+        block.appendChild(elem);
     }
 };
 func();
