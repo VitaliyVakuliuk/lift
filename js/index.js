@@ -27,6 +27,12 @@ let asd = document.querySelectorAll('.floor')
 
 function func(e){
     callLift(e.target.innerHTML);
+    let elem = document.querySelector(".show");
+    let elem1 = document.querySelector(".hide");
+    elem.classList.toggle("show");
+    elem.classList.toggle("hide");
+    elem1.classList.toggle("hide");
+    elem1.classList.toggle("show");
 };
 
 function showDisplay() {
