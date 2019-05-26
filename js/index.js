@@ -16,7 +16,7 @@ function callLift(floor){
     setTimeout(()=>{
         alert(`Ліфт прибув Двері відкрито ${floor}`);
         showDisplay();
-        goLift();
+
     },2000); // todo time change after create all floors
 };
 
@@ -31,7 +31,8 @@ function func(e){
 };
 
 function showDisplay() {
-    createElements("btn","#display",);
+    goLift();
+    createElements("btn","#display");
 };
 
 function goLift(){
