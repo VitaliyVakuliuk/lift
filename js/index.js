@@ -16,6 +16,7 @@ function callLift(floor){
     setTimeout(()=>{
         alert(`Ліфт прибув Двері відкрито ${floor}`);
         showDisplay();
+        goLift();
     },2000); // todo time change after create all floors
 };
 
@@ -27,12 +28,13 @@ let asd = document.querySelectorAll('.floor')
 
 function func(e){
     callLift(e.target.innerHTML);
-    let elem = document.querySelector(".show");
-    let elem1 = document.querySelector(".hide");
-    elem.classList.toggle("hide");
-    elem1.classList.toggle("hide");
 };
 
 function showDisplay() {
     createElements("btn","#display",);
+};
+
+function goLift(){
+    let element1 = document.querySelector('#block');
+    element1.classList.toggle("hide");
 }
