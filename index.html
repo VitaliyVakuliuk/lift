@@ -8,30 +8,6 @@
     <title>Lift</title>
 </head>
 <body>
-    <!--<div>
-    <div>
-    <input type="text" id="scoreboard"></div>
-    <button id="openDoor">Open door lift</button>
-    <button id="exit">Exit at lift</button>
-    <div id="container">
-        <input type="text" id="display" name="display">
-        <br>
-        <div class="button" id = "one">1</div>
-        <div class="button" id = "six">6</div>
-        <br>
-        <div class="button" id = "two">2</div>
-        <div class="button" id = "seven">7</div>
-        <br>
-        <div class="button" id = "three">3</div>
-        <div class="button" id = "eight">8</div>
-        <br>
-        <div class="button" id = "four">4</div>
-        <div class="button" id = "nine">9</div>
-        <br>
-        <div class="button" id = "five">5</div>
-        <div class="button" id = "ten">10</div>
-    </div>-->
-
     <div id="display" class="hide">
         <div class="btn">1</div>
         <div class="btn">2</div>
@@ -39,7 +15,20 @@
         <div class="btn">4</div>
         <div class="btn">5</div>
     </div>
-    <div id="block">Кнопка виклику ліфта</div>
+
+    <div id="container">
+        <div id="main_lift">
+            <div id="sss">
+                <input type="text" id="scoreboard">
+            </div>
+            <div id="door_lift">
+                <div id="door" style="width: 500px;"></div>
+            </div>
+        </div>
+        <div id="button">
+            <div id="block">Кнопка виклику ліфта</div>
+        </div>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
