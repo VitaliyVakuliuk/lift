@@ -8,4 +8,29 @@
     width: 200px;
     height: 200px;
     border: 1px solid red;
+    margin: 0 0 0 10px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+}
+#door {
+    height: 400px;
+    border: 1px solid red;
+    background: #f48342;
+}
+#scoreboard {
+    height: 20px;
+    width: 460px;
+    padding: 20px;
+    border-color: #000;
+    border-style: solid;
+    background-color: #fff;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    font-size: 1em;
+}
+#container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
