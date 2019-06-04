@@ -5,8 +5,8 @@
     display: none;
 }
 #block{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border: 1px solid red;
     margin: 0 0 0 10px;
     border-radius: 30px;

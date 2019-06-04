@@ -1,16 +1,16 @@
-//import  { NUMBER_FLOORS } from "../constants.js";
+let door = document.getElementById("door");
+function Resize() {
+    let ob = setInterval(function () {
+        door.style.width = parseInt(door.style.width) - 50 + "px";
+        count++;
+    }, 100);
+};
 
-/*function createElements(display = null, parentEl = "#block"){
-    const parentElem = document.querySelector(parentEl);
-
-    for(let i = 1; i <= 5; i++){
-        let elem = document.createElement("div");
-        elem.className = display;
-        elem.innerHTML = i;
-        parentElem.appendChild(elem);
-    }
-}*/
-//createElements();
+let scoreboard = document.querySelector('#scoreboard');
+function getRandomInt(min, max) { 
+    return Math.floor(Math.random() * Math.floor(max - min + 1)) + min; 
+};
+scoreboard.value = `ЛІФТ НА ${getRandomInt(1, 5)} ПОВЕРСІ`
 
 function callLift(floor){
     setTimeout(()=>{
@@ -20,36 +20,25 @@ function callLift(floor){
     },2000); // todo time change after create all floors
 };
 
-
-//callLift("f");
-
-/*let asd = document.querySelectorAll('.floor')
-    .forEach( btn => btn.addEventListener('click', func));
-
-function func(e){
-    callLift(e.target.innerHTML);
-};*/
-
 let buttons = document.querySelectorAll('.btn')
     .forEach(button => button.addEventListener('click', function(){
         alert(`Ви вибрали ${button.innerHTML} поверх`);
-        callLift();
+        setTimeout(()=>{
+            alert(`Ліфт прибув на ${button.innerHTML} поверх`);
+            goLift();
+        }, 2000);
 }));
 
 document.querySelector('#block')
     .addEventListener('click', function(){
         callLift();
+        Resize();
     })
-
-
-/*function showDisplay() {
-    goLift();
-    createElements("btn","#display");
-};*/
 
 function goLift(){
     let element = document.querySelector('#block');
     let element1 = document.querySelector('#display')
     element.classList.toggle("hide");
     element1.classList.toggle("hide");
+    door.classList.toggle('hide')
 };
