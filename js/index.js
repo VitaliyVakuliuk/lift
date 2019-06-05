@@ -1,4 +1,4 @@
-let door = document.getElementById("door");
+let door = document.getElementById("door_right");
 let door1 = document.getElementById("door_left");
 function resize() {
     setTimeout(()=>{
@@ -38,6 +38,7 @@ let buttons = document.querySelectorAll('.btn')
 
 document.querySelector('#block')
     .addEventListener('click', function(){
+        scoreboard.value = `Ліфт опускається`;
         callLift();
         resize();
     })
