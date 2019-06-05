@@ -13,7 +13,7 @@
     text-align: center;
     padding: 10px;
 }
-#door {
+#door_left, #door_right {
     height: 400px;
     border: 1px solid red;
     background: #f48342;
@@ -33,4 +33,23 @@
     display: flex;
     justify-content:center;
     align-items: center;
+}
+#door_lift {
+    display: flex;
+    justify-content:center;
+}
+.btn {
+    color:red;
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+
+}
+.but{
+    position:absolute;
+    top: 150px;
+    right: 150px;
+    width: 200px;
 }
