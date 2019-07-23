@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-function func(){
-    for(let i = 1; i < 10; i++){
-        let elem = document.createElement('div');
-        let num = document.createTextNode(i);
-        elem.appendChild(num);
-        document.body.appendChild(elem);
-    }
-};
-func();
-=======
 function openDoorLift() {
     setTimeout(() => {
         $('#door_left').animate({ left: '-250px' });
@@ -73,4 +62,3 @@ function goLift() {
     element.classList.toggle("hide");
     element1.classList.toggle("hide");
 };
->>>>>>> development
